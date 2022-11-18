@@ -6,7 +6,7 @@ resource "aws_instance" "example" {
   ami           = "ami-0c76973fbe0ee100c"
   instance_type = "t2.micro"
   tags = {
-    Name = terraform.workspace == "default" ?  "default-t101-week3" : "t101-week3"
+    Name = terraform.workspace == "default" ?  "test-t101-week3" : "t101-week3"
   }
 }
 
